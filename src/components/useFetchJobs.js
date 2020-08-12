@@ -20,7 +20,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 
-const BASE_URL = `https://jobs.github.com/positions.json?client_id=${githubClientId}&client_secret=${githubClientSecret}`
+const BASE_URL = `https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?client_id=${githubClientId}&client_secret=${githubClientSecret}`
 
 const reducer = (state, action) => {
 	switch(action.type) {
