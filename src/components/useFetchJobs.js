@@ -8,8 +8,7 @@ const ACTIONS = {
 	UPDATE_HAS_NEXT_PAGE: 'update-has-next-page'
 }
 
-const BASE_URL = 'https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json'
-const BASE_URL2 = `https://jobs.github.com/positions.json?client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
+const BASE_URL = 'https://jobs.github.com/positions.json'
 
 const reducer = (state, action) => {
 	switch(action.type) {
